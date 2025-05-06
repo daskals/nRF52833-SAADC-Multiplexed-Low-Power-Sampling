@@ -1,6 +1,6 @@
 # nRF52833-SAADC-Multiplexed-Low-Power-Sampling
 
-This repository contains two example applications for the nRF52832 Development Kit (PCA10040) demonstrating periodic, low-power analog sampling using the SAADC peripheral. Sampling is triggered by the Real-Time Counter (RTC) and utilizes an external 74HC4051 multiplexer to read from up to 8 analog inputs.
+This repository contains two example applications for the nRF52833 Development Kit (pca10100) demonstrating periodic, low-power analog sampling using the SAADC peripheral. Sampling is triggered by the Real-Time Counter (RTC) and utilizes an external 74HC4051 multiplexer to read from up to 8 analog inputs.
 
 ## 📦 Features
 
@@ -14,7 +14,7 @@ This repository contains two example applications for the nRF52832 Development K
 
 ## 🔧 Hardware Requirements
 
-* [nRF52832 Development Kit (PCA10040)](https://www.nordicsemi.com/Products/Development-hardware/nrf52-dk)
+* [nRF52833 Development Kit (pca10100)](https://www.nordicsemi.com/Products/Development-hardware/nRF52833-DK)
 * Analog Multiplexer
 * Analog voltage sources (up to 3.6V when using gain 1/6)
 * Optional: LEDs for visual indicators
@@ -71,6 +71,6 @@ This project uses Nordic Semiconductor’s standard SDK license.
 
 ## 👨‍💼 Author
 
-Created by \[Your Name], based on Nordic's SAADC example and extended for multi-channel low-power applications.
+Created by \[Spyros Daskalakis], based on Nordic's SAADC example and extended for multi-channel low-power applications.
 
 ---
