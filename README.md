@@ -27,7 +27,7 @@ This repository contains two example applications for the nRF52832 Development K
 
 ## 📂 Structure
 
-* `main_mux_scan_polling/`: Scans all MUX channels sequentially using nrf\_drv\_saadc\_sample\_convert in `perform_saadc_sample` function.
+* `main_polling.c.txt`: Scans all MUX channels sequentially using nrf\_drv\_saadc\_sample\_convert in `perform_saadc_sample` function.
 * `main.c`: Scans channels using SAADC event callback chaining.
 
 ## 📊 MUX Pin Configuration
@@ -62,15 +62,6 @@ The following plots were captured using the **Nordic Power Profiler Kit II (PPK2
 
 These results highlight the lower average current and charge consumption of the polling-based SAADC sampling approach.
 
-### Plots
-
-**Event-based (main.c)**
-
-![main plot](plots/ADC_main_0_67uA.PNG)
-
-**Polling-based (main\_mux\_scan\_polling)**
-
-![polling plot](plots/ADC_polling_0_45uA.PNG)
 
 ## 📝 License
 
