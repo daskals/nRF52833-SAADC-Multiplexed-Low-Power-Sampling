@@ -23,11 +23,19 @@ This repository contains two example applications for the nRF52833 Development K
 
 * **SDK Version:** nRF5 SDK 17.1.0
 * **SoftDevice:** Not required
-* **Toolchain:** SEGGER Embedded Studio or GCC
+* **Toolchain:** SEGGER Embedded Studio or GCC  
+  ➤ Tested with **SEGGER Embedded Studio for ARM v5.42a**  
+
+> 📁 To run this project:
+> 1. Place the entire folder under:  
+>    `nRF5_SDK_17.1.0_ddde560\examples\peripheral\`
+> 2. Open and run the project file `saadc_pca10100.emProject` located in:  
+>    `pca10100\blank\ses\`
+
 
 ## 📂 Structure
 
-* `main_polling.c.txt`: Scans all MUX channels sequentially using nrf\_drv\_saadc\_sample\_convert in `perform_saadc_sample` function.
+* `main_polling.c.txt`: Scans all MUX channels sequentially using nrf_drv_saadc_sample_convert in `perform_saadc_sample` function.
 * `main.c`: Scans channels using SAADC event callback chaining.
 
 ## 📊 MUX Pin Configuration
@@ -55,10 +63,10 @@ This repository contains two example applications for the nRF52833 Development K
 
 The following plots were captured using the **Nordic Power Profiler Kit II (PPK2)** to compare the average current consumption between the two approaches.
 
-| Mode                          | Average Current | Max Current | Average Charge | Plot                                     |
-| ----------------------------- | --------------- | ----------- | -------------- | ---------------------------------------- |
-| **main.c** (event-based)      | 0.67 µA         | 4.24 mA     | 6.66 µC        | ![main](plots/ADC_main_0_67uA.PNG)       |
-| **main\_mux\_scan\_polling/** | 0.45 µA         | 4.54 mA     | 4.51 µC        | ![polling](plots/ADC_polling_0_45uA.PNG) |
+| Mode                          | Average Current | Max Current  | Plot                                     |
+| ----------------------------- | --------------- | -----------  | ---------------------------------------- |
+| **main.c** (event-based)      | 0.67 µA         | 4.24 mA      | ![main](plots/ADC_main_0_67uA.PNG)       |
+| **main\_mux\_scan\_polling/** | 0.45 µA         | 4.54 mA      | ![polling](plots/ADC_polling_0_45uA.PNG) |
 
 These results highlight the lower average current and charge consumption of the polling-based SAADC sampling approach.
 
