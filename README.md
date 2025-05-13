@@ -1,6 +1,6 @@
 # nRF52833-SAADC-Multiplexed-Low-Power-Sampling
 
-This repository contains two example applications for the nRF52833 Development Kit (pca10100) demonstrating periodic, low-power analog sampling using the SAADC peripheral. Sampling is triggered by the Real-Time Counter (RTC) and utilizes an external 74HC4051 multiplexer to read from up to 8 analog inputs.
+This repository contains two example applications for the nRF52833 Development Kit (pca10100) demonstrating periodic, low-power analog sampling using the SAADC peripheral. Sampling is triggered by the Real-Time Counter (RTC) and utilizes an external analog multiplexer to read from up to 8 analog inputs.
 
 ## 📦 Features
 
